@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main
       id="home"
-      className="pt-[8rem] xl:pt-[12rem] pl-2 xl:px-[14rem] bg-[#F9F9F9] outline-1 h-[120vh] xl:h-[100vh]">
+      className="pt-[8rem] xl:pt-[12rem] pl-2 xl:px-[14rem] bg-[#F9F9F9] outline-1 h-[140vh] xl:h-[100vh]">
       <section className="flex flex-col-reverse xl:flex-row xl:gap-[12rem]">
         <div>
           <h1
