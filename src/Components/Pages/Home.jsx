@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImg from '..//images/circle-cropped.png';
+import HeroImg from '..//images/hero-img.png';
 import WomanCoding from '..//images/woman-coding.png';
 import HtmlIcon from '..//images/html5.svg';
 import CssIcon from '..//images/css.svg';
@@ -42,13 +42,16 @@ const Home = () => {
             </button>
           </a>
         </div>
-        <div className="relative z-10 transition-[.3s] border-none img">
-          <img
-            src={HeroImg}
-            alt="Ayo's image"
-            className="m-auto w-[280px] md:w-[350px] md:max-w-none"
-            id="imageDesign"
-          />
+        <div className="hero__img-container w-[280px] md:w-[350px]">
+          <div className="hero__img">
+            <img
+              src={HeroImg}
+              alt="Ayo's image"
+              className="m-auto w-[280px] md:w-[350px] md:max-w-none"
+              id="imageDesign"
+            />
+          </div>
+          {/* relative z-10 transition-[.3s] border-none */}
         </div>
       </section>
       {/* md:border-b-solid md:border-b-2 md:border-b-font-color */}

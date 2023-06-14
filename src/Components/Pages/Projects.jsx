@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import JadooImg from '..//images/jadoo.png';
-import JadooHover from '..//images/jadooHover.png';
+import SushiImg from '..//images/Screenshot  Sushiman.png';
+import SushiHover from '..//images/sushi hover.png';
 import Calculator from '..//images/calculator.png';
 import Dashboard from '..//images//dashboard.png';
 import DashboardHover from '..//images//dashboardHover.png';
@@ -83,18 +83,18 @@ const Projects = () => {
             id="p-container">
             <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
               <img
-                src={isHovered ? JadooHover : JadooImg}
-                alt="Travel website"
+                src={isHovered ? SushiHover : SushiImg}
+                alt="Sushiman website"
                 className="h-auto hover:cursor-pointer rounded-2xl"
               />
             </div>
             <div className="flex flex-col justify-center text-center h-auto">
               <h4 className="uppercase mb-8 text-font-color text-base mt-8 font-extrabold xl:mb-0">
-                jadoo travel ✈️
+                sushiman 🍣
               </h4>
               <p className="text-harsh text-center font-medium text-xl xl:mt-4 xl:w-[300px]">
-                A travel website that offers travel services such as booking accommodations and
-                tours. The website design is visually appealing, simple and easy-to-navigate layout.
+                The website provides a user-friendly interface and a variety of features to showcase
+                products, services, and information about the business.
               </p>
               <div className="flex gap-4 justify-center mt-8 mb-8 xl:mt-0 xl:mb-0">
                 <p className="text-black font-bold shadow-3xl bg-white px-[1.3rem] py-[1rem]">
@@ -103,11 +103,12 @@ const Projects = () => {
                 <p className="text-black font-bold shadow-3xl bg-white px-[1.3rem] py-[1rem]">
                   CSS
                 </p>
+                <p className="text-black font-bold shadow-3xl bg-white px-[1.3rem] py-[1rem]">JS</p>
               </div>
               <div className="xl:ml-8">
                 <a
                   target="_blank"
-                  href="https://github.com/lebrin-Ay/Travel-Landing-Page"
+                  href="https://github.com/lebrin-Ay/sushiman-website"
                   rel="noreferrer"
                   className="text-font-color text-xl font-medium mr-6 hover:text-pink no-underline">
                   Code
@@ -115,7 +116,7 @@ const Projects = () => {
                 </a>
                 <a
                   target="_blank"
-                  href="https://eloquent-macaron-f2d361.netlify.app/"
+                  href="https://sushiman-90.netlify.app/"
                   rel="noreferrer"
                   className="text-font-color text-xl font-medium mr-6 hover:text-pink no-underline">
                   Live Demo

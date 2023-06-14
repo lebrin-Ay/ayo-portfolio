@@ -49,10 +49,40 @@ body {
   #techStack {
     margin-inline: 0 !important;
   }
+  .hero__img-container {
+    height: 300px;
+  }
 }
 
 @media (max-width: 366px) {
   #p-container {
     width: 18rem;
   }
+}
+
+@media (max-width: 768px) {
+  .hero__img-container {
+    height: 240px;
+  }
+  
+}
+
+.hero__img-container {
+  border-radius: 2rem;
+  background: rgb(214,51,132);
+  background: linear-gradient(90deg, rgba(214,51,132,1) 29%, rgba(118,118,118,1) 59%);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* height: 300px; */
+}
+
+.hero__img {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+
+.hero__img:hover {
+  transform: rotate(0);
 }
