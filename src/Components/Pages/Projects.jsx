@@ -5,6 +5,8 @@ import SushiHover from '..//images/sushi hover.png';
 import Calculator from '..//images/calculator.png';
 import Dashboard from '..//images//dashboard.png';
 import DashboardHover from '..//images//dashboardHover.png';
+import Liquidmoni from '..//images/liquidmonni-website.png';
+import LiquidmoniHover from '..//images/liquidmoni-website-hover.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -30,6 +32,53 @@ const Projects = () => {
         </p>
 
         <div className="grid gap-20 grid-rows-[auto auto] grid-cols-[1fr] h-auto xl:ml-[13rem]">
+          <div
+            className="flex flex-col gap-3 w-full m-[0 auto] p-8 bg-white rounded-[1.7rem] xl:flex-row md:gap-32 shadow-3xl xl:w-[58.5rem] xl:h-[24rem]"
+            id="p-container">
+            <div
+              onMouseEnter={handleHover}
+              onMouseLeave={handleMouseLeave}
+              className="overflow-y-scroll no-scrollbar">
+              <img
+                src={isHovered ? LiquidmoniHover : Liquidmoni}
+                alt="Liquidmoni Website"
+                className="h-auto hover:cursor-pointer rounded-2xl"
+              />
+            </div>
+            <div className="flex flex-col justify-center text-center h-auto">
+              <h4 className="uppercase mb-8 text-font-color text-base font-extrabold xl:mb-0">
+                liquidmoni
+              </h4>
+              <p className="text-harsh text-center font-medium text-xl xl:mt-4 xl:w-[300px]">
+                A financial platform that offers users the ultimate combination of convenience and
+                security
+              </p>
+              <div className="flex gap-4 justify-center mt-8 mb-8 xl:mt-0 xl:mb-0">
+                <p className="text-black font-bold shadow-3xl bg-white px-[1.3rem] py-[1rem]">
+                  REACT JS
+                </p>
+              </div>
+              <div className="xl:ml-8">
+                {/* <a
+                  target="_blank"
+                  href="https://github.com/johnfeyisayo/Citrone-Redesign/tree/ayo_dashboard"
+                  rel="noreferrer"
+                  className="text-font-color text-xl font-medium mr-6 hover:text-pink no-underline">
+                  Code
+                  <FontAwesomeIcon icon={faGithub} className="ml-2 text-2xl" />
+                </a> */}
+                <a
+                  target="_blank"
+                  href="https://liquidmoni.com/"
+                  rel="noreferrer"
+                  className="text-font-color text-xl font-medium mr-6 hover:text-pink no-underline">
+                  <span>Live Demo</span>
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="ml-2 text-xl" />
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div
             className="flex flex-col gap-3 w-full m-[0 auto] p-8 bg-white rounded-[1.7rem] xl:flex-row md:gap-32 shadow-3xl xl:w-[58.5rem] xl:h-[24rem]"
             id="p-container">
